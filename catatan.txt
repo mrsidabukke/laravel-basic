@@ -1,0 +1,32 @@
+1.untuk mengubah bahasa dan waktu bisa dilihat di folder config lalu app.php . lalu locale dan timezone
+jika ingin mengubah bahasa pastikan anda sudah memiliki foldernya di resources/lang
+
+2. mass asignment 
+Dalam konteks Laravel, "mass assignment" merujuk pada teknik di mana sebuah model Eloquent dalam Laravel dapat menerima input data dalam bentuk array dan secara otomatis mengisi atribut-atribut yang sesuai pada model tersebut.
+Secara default, Laravel menyediakan fitur mass assignment yang kuat. Ini berarti bahwa Anda dapat mengirimkan seluruh array data input sekaligus ke model Eloquent, dan Laravel akan secara otomatis mengisi atribut-atribut yang sesuai pada model tersebut. Namun, ini juga dapat menjadi celah keamanan jika tidak diatur dengan benar.
+Untuk melindungi dari potensi masalah keamanan, Laravel menyertakan mekanisme yang disebut "mass assignment protection" atau "fillable guard". Dengan mekanisme ini, 
+Anda dapat menentukan secara eksplisit atribut-atribut mana yang diizinkan untuk di-mass assign (diisi secara massal) dari inputan pengguna. Ini dilakukan dengan mendefinisikan sebuah array fillable atau guarded di dalam model Eloquent Anda.
+
+3. resource controller adalah jenis routing untuk crud secara otomatis yang sudah disediakaan oleh laravel itu sendiri
+   tetapi harus mengikuti semua standar yang diberikan oleh laravael
+   agar semuanya dapat otomatis dapat menggunakan php artisan make:controller PhotoController --resource
+
+
+4. Migration pada Laravel adalah sebuah fitur yang memungkinkan pengembang untuk secara mudah mengatur dan mengelola skema database mereka 
+melalui kode. Dengan menggunakan migration, pengembang dapat mendefinisikan struktur database dalam kode PHP 
+tanpa harus menulis perintah SQL langsung. Ini memudahkan dalam pengelolaan versi skema database, kolaborasi tim, dan pengujian, 
+karena skema database dapat disimpan dalam kontrol versi bersama dengan kode aplikasi.
+atau seperti memiliki checpoint
+
+5. slug berfungsi agar mempercantik url
+
+6. cara membuat custom error adalah dibawah folder error
+
+7. soft delete adalah cara menghapus data ditampilan tapi tidak di database
+caranya adalah dengan mengimportnya di model lalu di migration
+
+8. load file js dan css dibuat dibawah folder public lalu buat folder baru
+
+9. component adalah template yang dinamis dan dapat diubah ubah
+
+10.php artisan make:migration add_thumbnail_to_articles (cara menambahkan kolom tanpa melakukan rollback)
